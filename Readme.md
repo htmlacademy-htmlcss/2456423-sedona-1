@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Евгений Пыхтин](https://up.htmlacademy.ru/htmlcss-individual/1/user/2456423).
-* Наставник: Андрей Грачев.
+* Наставник: [Андрей Грачев](https://htmlacademy.ru/profile/angra)
 
 ---
 
