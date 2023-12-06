@@ -13,27 +13,29 @@
         </a>
         <nav class="navigation">
           <ul class="navigation-list">
-            <li class="navigation-item">
-              <a class="navigation-link" href="index.html">Главная</a>
+            <li class="navigation-item navigation-item-current">
+              <a class="navigation-link">Главная</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">О Седоне</a>
             </li>
-            <li class="navigation-item navigation-item-current">
-              <a class="navigation-link">Гостиницы</a>
+            <li class="navigation-item">
+              <a class="navigation-link" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
           <ul class="navigation-list navigation-user">
-            <li class="navigation-item">
-              <button class="navigation-button" type="button" value="search">
-                <span class="visually-hidden">Поиск</span>
-              </button>
-            </li>
-            <li class="navigation-item">
-              <button class="navigation-button" type="button" value="like">
-                <span class="visually-hidden">Лайк</span>
-              </button>
-            </li>
+            <div class="header-icons">
+              <li class="navigation-item">
+                <button class="navigation-button" type="button" value="search">
+                  <span class="visually-hidden">Поиск</span>
+                </button>
+              </li>
+              <li class="navigation-item">
+                <button class="navigation-button" type="button" value="like">
+                  <span class="visually-hidden">Лайк</span>
+                </button>
+              </li>
+            </div>
             <li class="navigation-item">
               <a class="button" href="#">ХОЧУ СЮДА!</a>
             </li>
@@ -119,7 +121,7 @@
           </section>
         </div>
         <section class="offers">
-          <h2 class="vissualy-hidden">Найденные предложения</h2>
+          <h2 class="visually-hidden">Найденные предложения</h2>
           <div class="appearence-container">
             <p class="offers-text"><b>НАЙДЕНО ГОСТИНИЦ:</b><span class="offers-number">38</span></p>
             <div class="offers-container">
@@ -255,8 +257,10 @@
           </ol>
         </section>
         <section class="subscription subscription-inner">
-          <h2 class="intro">Подпишитесь на рассылку</h2>
-          <p class="text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <div class="subscription-container">
+            <h2 class="intro">Подпишитесь на рассылку</h2>
+            <p class="text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          </div>
           <form class="form-email" action="#" method="post" name="email">
             <input class="email-input" type="email" name="email" placeholder="Ваш e-mail" required>
             <button class="button button-blue" type="submit" value="ПОДПИСАТЬСЯ">ПОДПИСАТЬСЯ</button>
