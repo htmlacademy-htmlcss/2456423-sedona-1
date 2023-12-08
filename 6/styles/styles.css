@@ -172,11 +172,8 @@ body {
   min-width: 44px;
 }
 
-.header-icons {
-  align-items: center;
-  display: flex;
-  margin-right: 20px;
-  flex-wrap: wrap;
+.navigation-list .navigation-item:last-child {
+  margin-left: 20px;
 }
 
 .navigation-user .button {
@@ -283,11 +280,11 @@ body {
   text-align: center;
 }
 
-.advicse-title-container {
+.advices-title-container {
   padding: 64px 348px 64px 348px;
 }
 
-.advicse-title-container .intro {
+.advices-title-container .intro {
   margin-bottom: 20px;
 }
 
