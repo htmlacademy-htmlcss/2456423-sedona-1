@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
-    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
@@ -60,93 +60,99 @@
           <section class="selection">
             <h2 class="visually-hidden">Подбор гостиницы</h2>
             <form class="selection-form" action="https://echo.htmlacademy.ru" method="get" name="selector">
-              <fieldset class="infrastruct selection-fieldset">
-                <legend class="selection-legend">Инфраструктура:</legend>
-                <ul class="selection-list">
-                  <li class="infrastruct-item selection-item">
-                    <label class="infrastruct-label">
-                      <input class="visually-hidden infrastruct-input infrastruct-input-pool" type="checkbox"
-                        name="pool" checked>
-                      <span class="infrastruct-item-mark"></span>
-                      <span class="infrastruct-span">Бассейн</span>
-                    </label>
-                  </li>
-                  <li class="infrastruct-item selection-item">
-                    <label class="infrastruct-label">
-                      <input class="visually-hidden infrastruct-input infrastruct-input-parking" type="checkbox"
-                        name="parking" checked="checked">
-                      <span class="infrastruct-item-mark"></span>
-                      <span>Парковка</span>
-                    </label>
-                  </li>
-                  <li class="infrastruct-item selection-item">
-                    <label class="infrastruct-label">
-                      <input class="visually-hidden infrastruct-input infrastruct-input-wifi" type="checkbox"
-                        name="wifi">
-                      <span class="infrastruct-item-mark"></span>
-                      <span>Wi-Fi</span>
-                    </label>
-                  </li>
-                </ul>
-              </fieldset>
-              <fieldset class="house selection-fieldset">
-                <legend class="selection-legend">Тип жилья:</legend>
-                <ul class="selection-list">
-                  <li class="house-item selection-item">
-                    <label class="infrastruct-label">
-                      <input class="visually-hidden house-input house-input-hotel-lower" type="radio" checked="checked"
-                        name="house" value="1">
-                      <span class="house-item-mark"></span>
-                      <span>Гостиница</span>
-                    </label>
-                  </li>
-                  <li class="house-item selection-item">
-                    <label class="infrastruct-label">
-                      <input class="visually-hidden house-input house-input-hotel-upper" type="radio" name="house"
-                        value="2">
-                      <span class="house-item-mark"></span>
-                      <span>Отель</span>
-                    </label>
-                  </li>
-                  <li class="house-item selection-item">
-                    <label class="infrastruct-label">
-                      <input class="visually-hidden house-input house-input-appartment" type="radio" name="house"
-                        value="3">
-                      <span class="house-item-mark"></span>
-                      <span>Аппартаменты</span>
-                    </label>
-                  </li>
-                </ul>
-              </fieldset>
-              <fieldset class="price selection-fieldset">
-                <legend class="selection-legend">Стоимость, Р</legend>
-                <div class="range">
-                  <div class="range-wrapper-inputs">
-                    <label class="price-filter-label">
-                      <span class="range-input-label">от</span>
-                      <input class="range-input range-input-min field field-left" type="number" placeholder="0"
-                        name="min-price">
-                    </label>
-                    <label class="price-filter-label">
-                      <span class="range-input-label">до</span>
-                      <input class="range-input range-input-max field field-right" type="number" placeholder="9000"
-                        name="max-price">
-                    </label>
-                  </div>
-                  <div class="range-wrapper-scale">
-                    <div class="range-scale"></div>
-                    <div class="range-bar" style="left: 40px; width: 200px">
-                      <button class="range-toggle toggle-min" type="button">
-                      </button>
-                      <button class="range-toggle toggle-max" type="button">
-                      </button>
+              <div class="selection-form-container">
+                <fieldset class="infrastruct selection-fieldset">
+                  <legend class="selection-legend">Инфраструктура:</legend>
+                  <ul class="selection-list">
+                    <li class="infrastruct-item selection-item">
+                      <label class="infrastruct-label">
+                        <input class="visually-hidden infrastruct-input infrastruct-input-pool" type="checkbox"
+                          name="pool" checked>
+                        <span class="infrastruct-item-mark"></span>
+                        <span class="infrastruct-span">Бассейн</span>
+                      </label>
+                    </li>
+                    <li class="infrastruct-item selection-item">
+                      <label class="infrastruct-label">
+                        <input class="visually-hidden infrastruct-input infrastruct-input-parking" type="checkbox"
+                          name="parking" checked="checked">
+                        <span class="infrastruct-item-mark"></span>
+                        <span>Парковка</span>
+                      </label>
+                    </li>
+                    <li class="infrastruct-item selection-item">
+                      <label class="infrastruct-label">
+                        <input class="visually-hidden infrastruct-input infrastruct-input-wifi" type="checkbox"
+                          name="wifi">
+                        <span class="infrastruct-item-mark"></span>
+                        <span>Wi-Fi</span>
+                      </label>
+                    </li>
+                  </ul>
+                </fieldset>
+                <fieldset class="house selection-fieldset">
+                  <legend class="selection-legend">Тип жилья:</legend>
+                  <ul class="selection-list">
+                    <li class="house-item selection-item">
+                      <label class="infrastruct-label">
+                        <input class="visually-hidden house-input house-input-hotel-lower" type="radio"
+                          checked="checked" name="house" value="1">
+                        <span class="house-item-mark"></span>
+                        <span>Гостиница</span>
+                      </label>
+                    </li>
+                    <li class="house-item selection-item">
+                      <label class="infrastruct-label">
+                        <input class="visually-hidden house-input house-input-hotel-upper" type="radio" name="house"
+                          value="2">
+                        <span class="house-item-mark"></span>
+                        <span>Мотель</span>
+                      </label>
+                    </li>
+                    <li class="house-item selection-item">
+                      <label class="infrastruct-label">
+                        <input class="visually-hidden house-input house-input-appartment" type="radio" name="house"
+                          value="3">
+                        <span class="house-item-mark"></span>
+                        <span>Аппартаменты</span>
+                      </label>
+                    </li>
+                  </ul>
+                </fieldset>
+              </div>
+              <div class="selection-form-container">
+                <fieldset class="price selection-fieldset">
+                  <legend class="selection-legend">Стоимость, Р</legend>
+                  <div class="range">
+                    <div class="range-wrapper-inputs">
+                      <label class="price-filter-label">
+                        <span class="range-input-label">от</span>
+                        <input class="range-input range-input-min field field-left" type="number" placeholder="0"
+                          name="min-price">
+                      </label>
+                      <label class="price-filter-label">
+                        <span class="range-input-label">до</span>
+                        <input class="range-input range-input-max field field-right" type="number" placeholder="9000"
+                          name="max-price">
+                      </label>
+                    </div>
+                    <div class="range-wrapper-scale">
+                      <div class="range-scale"></div>
+                      <div class="range-bar" style="left: 40px; width: 200px">
+                        <button class="range-toggle toggle-min" type="button">
+                          <span class="visually-hidden">Уменьшить стоимость.</span>
+                        </button>
+                        <button class="range-toggle toggle-max" type="button">
+                          <span class="visually-hidden">Увеличить стоимость.</span>
+                        </button>
+                      </div>
                     </div>
                   </div>
+                </fieldset>
+                <div class="selection-buttons">
+                  <button class="button button-blue select-apply" type="submit">применить</button>
+                  <button class="button button-transparent select-reset" type="reset">сбросить</button>
                 </div>
-              </fieldset>
-              <div class="selection-buttons">
-                <button class="button button-blue select-apply" type="submit">применить</button>
-                <button class="button button-transparent select-reset" type="reset">сбросить</button>
               </div>
             </form>
           </section>
@@ -154,7 +160,7 @@
         <section class="offers">
           <h2 class="visually-hidden">Найденные предложения</h2>
           <div class="appearence-container">
-            <p class="offers-text"><b>НАЙДЕНО ГОСТИНИЦ:</b><span class="offers-number">38</span></p>
+            <p class="offers-text"><b>НАЙДЕНО ГОСТИНИЦ:</b><span class="offers-number"> 38</span></p>
             <div class="offers-container">
               <select class="offers-order" name="order" aria-label="Сортировка">
                 <option value="1" selected="selected">Сначала дешевые</option>
@@ -188,7 +194,7 @@
                 <h3 class="gallery-link-title">Amara Resort & Spa</h3>
               </a>
               <span>Гостиница</span>
-              <span class="gallery-item-right">от 4000 Р</span>
+              <span class="gallery-item-right">От 4000 Р</span>
               <a class="gallery-link button button-brown" href="#">ПОДРОБНЕЕ</a>
               <button class="gallery-button button button-blue gallery-item-right" type="button">в избранное</button>
               <p class="gallery-item-stars four-stars">
@@ -203,7 +209,7 @@
                 <h3 class="gallery-link-title">Villas at Poco Diablo</h3>
               </a>
               <span>Гостиница</span>
-              <span class="gallery-item-right">от 5000 Р</span>
+              <span class="gallery-item-right">От 5000 Р</span>
               <a class="gallery-link button button-brown" href="#">ПОДРОБНЕЕ</a>
               <button class="gallery-button button button-green gallery-item-right" type="button">в избранное</button>
               <p class="gallery-item-stars four-stars">
@@ -218,7 +224,7 @@
                 <h3 class="gallery-link-title">Desert Quail Inn</h3>
               </a>
               <span>Гостиница</span>
-              <span class="gallery-item-right">от 2500 Р</span>
+              <span class="gallery-item-right">От 2500 Р</span>
               <a class="gallery-link button button-brown" href="#">ПОДРОБНЕЕ</a>
               <button class="gallery-button button button-blue gallery-item-right" type="button">в избранное</button>
               <p class="gallery-item-stars three-stars">
@@ -233,7 +239,7 @@
                 <h3 class="gallery-link-title">GreenTree Inn</h3>
               </a>
               <span>Гостиница</span>
-              <span class="gallery-item-right">от 1500 Р</span>
+              <span class="gallery-item-right">От 1500 Р</span>
               <a class="gallery-link button button-brown" href="#">ПОДРОБНЕЕ</a>
               <button class="gallery-button button button-blue gallery-item-right" type="button">в избранное</button>
               <p class="gallery-item-stars two-stars">
@@ -314,7 +320,7 @@
               </a>
             </li>
           </ul>
-          <a class="phone" href="tel:+78128121212">+7(812)812-12-1</a>
+          <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
           <a class="footer-logo" href="https://htmlacademy.ru/">
             <svg class="svg-logo" width="115" height="34" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -323,59 +329,6 @@
           </a>
         </section>
       </footer>
-      <div class="popover popover-on">
-        <section class="popover-section">
-          <div class="popover-header">
-            <h2 class="popover-title">Поиск гостиницы в седоне</h2>
-            <button class="popover-exit" type="button">
-              <span class="visually-hidden">Выйти из поиска</span>
-            </button>
-          </div>
-          <label class="popover-label popover-label-error">
-            <span class="date-input-text">Дата заезда:</span>
-            <input class="date-input date-input-begin date-input-error" type="text" name="date-begin" placeholder="Укажите дату">
-          </label>
-          <label class="popover-label popover-label-success">
-            <span class="date-input-text">Дата выезда:</span>
-            <input class="date-input date-input-begin" type="text" name="date-begin" placeholder="Укажите дату">
-          </label>
-          <div class="popover-count">
-            <label class="popover-count-label" for="old">Взрослые:</label>
-            <button class="count-reduce count-part" type="button">
-			  <svg class="count-svg" width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0v2h14V0H0Z"/></svg>
-              <span class="visually-hidden">Умненьшить количество взрослых</span>
-            </button>
-            <input class="popover-input-count count-part" id="old" type="number" name="number" value="2">
-            <button class="count-increase count-part" type="button">
-			  <svg class="count-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z"/></svg>
-              <span class="visually-hidden">Увеличить количество взрослых</span>
-            </button>
-          </div>
-          <div class="popover-count">
-            <div class="popover-count-container">
-              <label class="popover-count-label" for="young">Дети:</label>
-              <div class="tooltip-container">
-                <span class="popover-tooltip"></span>
-                <p class="tooltip-text">
-                  <span class="tooltip-text-inner">Укажите количество детей, которые будут с вами,
-                    возраст котрых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
-                </p>
-              </div>
-            </div>
-            <button class="count-reduce count-part" type="button">
-			  <svg class="count-svg" width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0v2h14V0H0Z"/></svg>
-              <span class="visually-hidden">Умненьшить количество детей</span>
-            </button>
-            <input class="popover-input-count count-part" id="young" type="number" name="number" value="2">
-            <button class="count-increase count-part" type="button">
-			  <svg class="count-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z"/></svg>
-              <span class="visually-hidden">Увеличить количество детей</span>
-            </button>
-          </div>
-          <a class="popover-link button button-blue" href="#">Найти</a>
-
-        </section>
-      </div>
     </div>
   </body>
 

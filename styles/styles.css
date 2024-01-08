@@ -47,6 +47,7 @@ body {
   margin: 0 auto;
   min-height: 100%;
   width: 1200px;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.20);
 }
 
 .main-index,
@@ -234,7 +235,7 @@ body {
 /*header-page*/
 
 .page-header {
-  align-items: center;
+  align-items: flex-start;
   display: flex;
   font-weight: 700;
   padding: 0 70px 0 70px;
@@ -284,7 +285,7 @@ body {
 
 .navigation-link {
   display: block;
-  padding: 20px 16px 20px 16px;
+  padding: 21px 16px 20px 16px;
   color: #000000;
   font-size: 20px;
   line-height: 24px;
@@ -376,7 +377,7 @@ body {
   z-index: 1;
 }
 
-.navigation-list .navigation-item:last-child {
+.navigation-user .navigation-item:last-child {
   margin-left: 20px;
 }
 
@@ -403,7 +404,7 @@ body {
   padding-top: 51px;
   padding-bottom: 82px;
   position: relative;
-  margin-top: -3px;
+  margin-top: -5px;
 }
 
 .hero-background {
@@ -426,7 +427,7 @@ body {
 }
 
 .advantages-title-container {
-  padding: 69px 275px 69px 275px;
+  padding: 69px 274px 90px 274px;
 }
 
 .advantages-title-container .intro {
@@ -476,9 +477,9 @@ body {
   align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   min-height: 205px;
-  padding: 100px 85px 80px;
+  padding: 103px 85px 77px;
   width: 230px;
 }
 
@@ -602,7 +603,7 @@ body {
   background-repeat: no-repeat;
   background-color: #000000;
   color: #ffffff;
-  padding: 96px 258px 96px 258px;
+  padding: 96px 258px 104px 258px;
 }
 
 .subscription-container {
@@ -623,6 +624,7 @@ body {
 .subscription .email-input {
   background-color: #f2f2f2;
   line-height: 24px;
+  width: 452px;
 }
 
 .subscription .button {
@@ -641,7 +643,7 @@ body {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding: 40px 70px 30px 70px;
+  padding: 47px 70px 30px 70px;
 }
 
 .social {
@@ -689,7 +691,7 @@ body {
 
 .phone {
   color: #000000;
-  font-size: 40px;
+  font-size: 39px;
   line-height: 40px;
   text-transform: uppercase;
   text-decoration: none;
@@ -737,7 +739,7 @@ body {
   background-repeat: no-repeat;
   background-size: 100% auto;
   padding: 35px 70px 70px 70px;
-  margin-top: -3px;
+  margin-top: -5px;
 }
 
 .inner-header {
@@ -819,9 +821,13 @@ body {
 }
 
 .selection-form {
-  display: grid;
-  grid-template-columns: 184px 181px 319px 191px;
-  gap: 62px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.selection-form-container {
+  display: flex;
+  gap: 70px;
 }
 
 .infrastruct,
@@ -917,7 +923,7 @@ body {
   display: flex;
   gap: 2px;
   justify-content: center;
-  margin-bottom: 36px;
+  margin-bottom: 42px;
 }
 
 .price-filter-label {
@@ -943,7 +949,7 @@ body {
 
 .range-input:not(:placeholder-shown) {
   border: 2px solid #000000;
-  padding: 10px 18px 10px 18px;
+  padding: 10px 40px 10px 18px;
 }
 
 .range-input::-webkit-outer-spin-button,
@@ -1053,6 +1059,8 @@ body {
   outline: none;
   border-radius: 4px;
   color: #333;
+  font: inherit;
+  font-size: 18px;
   line-height: 21px;
   margin-right: 70px;
   padding: 12px 34px 12px 20px;
@@ -1284,13 +1292,9 @@ body {
 
 .popover-on {
   display: flex;
-
 }
 
 .popover-section {
-  display: grid;
-  grid-template-columns: 247px 242px;
-  column-gap: 88px;
   background: #ffffff;
   box-sizing: border-box;
   border-radius: 30px;
@@ -1302,9 +1306,8 @@ body {
 }
 
 .popover-header {
-  grid-column: 1/3;
   position: relative;
-  margin-bottom: 48px;
+  margin-bottom: 64px;
 }
 
 .popover-title {
@@ -1345,7 +1348,6 @@ body {
 }
 
 .popover-label {
-  grid-column: 1/3;
   display: flex;
   justify-content: space-between;
   margin-bottom: 48px;
@@ -1358,7 +1360,7 @@ body {
   width: 440px;
   height: 24px;
   box-sizing: border-box;
-  bottom: -24px;
+  bottom: -27px;
   left: 138px;
   padding-left: 20px;
   padding-right: 20px;
@@ -1374,7 +1376,7 @@ body {
   width: 440px;
   height: 24px;
   box-sizing: border-box;
-  bottom: -24px;
+  bottom: -27px;
   left: 138px;
   padding-left: 20px;
   padding-right: 20px;
@@ -1393,7 +1395,7 @@ body {
 .date-input {
   appearance: none;
   box-sizing: border-box;
-  padding: 12px 20px 12px 20px;
+  padding: 12px 40px 12px 20px;
   width: 440px;
   margin: 0;
   border: none;
@@ -1402,6 +1404,7 @@ body {
   color: #000000;
   background-color: #f2f2f2;
   background-image: url("../images/icons/date-icon.png");
+  background-size: 16px 15px;
   background-repeat: no-repeat;
   background-position: right 20px center;
 }
@@ -1420,7 +1423,7 @@ body {
   border: 3px solid #83b3d3;
   background-color: #e6e6e6;
   background-position: right 17px center;
-  padding: 9px 17px 9px 17px;
+  padding: 9px 40px 9px 17px;
   outline: none;
 }
 
@@ -1428,14 +1431,28 @@ body {
 .count-reduce:active,
 .count-increase:active {
   border: 2px solid #000;
-  padding: 10px 18px 10px 18px;
   background-position: right 18px center;
+}
+
+.date-input:active {
+  padding: 10px 40px 10px 18px;
+}
+
+.count-reduce:active,
+.count-increase:active {
+  padding: 10px 18px 10px 18px;
 }
 
 .date-input:disabled,
 .count-reduce:disabled,
 .count-increase:disabled {
   opacity: 0.3;
+}
+
+.popover-counts {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .popover-count {
@@ -1508,6 +1525,10 @@ body {
   margin: 0;
 }
 
+.popover-input-count {
+  -moz-appearance: textfield;
+}
+
 .popover-count-container {
   display: flex;
   align-items: center;
@@ -1523,7 +1544,7 @@ body {
   position: relative;
 }
 
-.popover-tooltip {
+.popover-button {
   display: block;
   height: 26px;
   width: 26px;
@@ -1532,40 +1553,55 @@ body {
   background-image: url("../images/icons/tooltip.svg");
   background-repeat: no-repeat;
   background-position: center;
+  border: none;
+}
+
+.popover-button:hover,
+.popover-button:focus-visible {
+  background-color: #e6e6e6;
+  outline: none;
 }
 
 .tooltip-text {
   display: none;
   position: absolute;
   width: 256px;
-  min-height: 160px;
-  background-image: url(../images/tooltip-bg.svg);
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: 313px 202px;
+  min-height: 143px;
+  background-color: #333333;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
-  word-wrap: normal;
   color: #ffffff;
   box-sizing: border-box;
-  top: 28px;
+  top: 41px;
   left: -115px;
   margin: 0;
+  border-radius: 10px;
+  z-index: 1;
 }
 
-.popover-tooltip:hover ~ .tooltip-text {
-  display: flex;
+.tooltip-text::before {
+  position: absolute;
+  content: "";
+  height: 9px;
+  width: 19px;
+  background-image: url("../images/triangle-popover.svg");
+  top: -9px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.popover-button:hover ~ .tooltip-text,
+.popover-button:focus-visible ~ .tooltip-text {
+  display: block;
 }
 
 .tooltip-text-inner {
   display: block;
-  padding: 15px 18px 18px 22px;
-  margin: auto;
+  padding: 19px 18px 23px 22px;
 }
 
-.popover-link {
-  grid-column: 1/3;
+.popover-submit {
   display: block;
   text-align: center;
   text-decoration: none;
@@ -1576,4 +1612,5 @@ body {
   padding-top: 18px;
   padding-bottom: 18px;
   border-radius: 10px;
+  width: 100%;
 }
