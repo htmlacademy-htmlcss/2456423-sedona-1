@@ -1505,7 +1505,7 @@ body {
   font: inherit;
   color: #000000;
   background-color: #f2f2f2;
-  background-image: url("../images/icons/date-icon.png");
+  background-image: url("../images/icons/date-icon.svg");
   background-size: 16px 15px;
   background-repeat: no-repeat;
   background-position: right 22px center;
@@ -1516,9 +1516,24 @@ body {
 .count-increase:hover {
   background-color: #e6e6e6;
   color: #ffffff;
+  background-position: right 22px center;
 }
 
-.date-input:focus-visible,
+.date-input:focus-visible {
+  padding: 9px 40px 9px 17px;
+  border-radius: 4px;
+  border: 3px solid #83b3d3;
+  background-color: #e6e6e6;
+  background-position: right 19px center;
+  outline: none;
+}
+
+.date-input:active {
+  padding: 10px 40px 10px 18px;
+  border: 2px solid #000;
+  background-position: right 20px center;
+}
+
 .count-reduce:focus-visible,
 .count-increase:focus-visible {
   border-radius: 4px;
@@ -1528,24 +1543,15 @@ body {
   outline: none;
 }
 
-.date-input:focus-visible {
-  padding: 9px 40px 9px 17px;
-}
-
 .count-reduce:focus-visible,
 .count-increase:focus-visible {
   padding: 9px 17px 9px 17px;
 }
 
-.date-input:active,
 .count-reduce:active,
 .count-increase:active {
   border: 2px solid #000;
   background-position: right 18px center;
-}
-
-.date-input:active {
-  padding: 10px 40px 10px 18px;
 }
 
 .count-reduce:active,
