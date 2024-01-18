@@ -137,7 +137,7 @@ body {
 }
 
 .button-green:active {
-  background-color: #7dB54f;
+  background-color: #7db54f;
   color: rgba(255, 255, 255, 0.30);
 }
 
@@ -401,7 +401,7 @@ body {
 /*main-page*/
 
 .hero {
-  background-color: #000000;
+  background-color: #82b3d3;
   background-image: url("../images/hero-border.svg"), url("../images/hero-bg.jpg");
   background-repeat: no-repeat;
   background-size: contain, cover;
@@ -443,6 +443,7 @@ body {
 
 .advantages-list {
   display: grid;
+  align-items: baseline;
   grid-template-columns: repeat(3, 400px);
   list-style: none;
   margin: 0;
@@ -547,6 +548,7 @@ body {
 .advices-list {
   display: flex;
   flex-wrap: wrap;
+  align-items: baseline;
   justify-content: flex-start;
   list-style: none;
   margin: 0;
@@ -619,7 +621,7 @@ body {
   background-image: url("../images/subscription-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #000000;
+  background-color: #82b2d3;
   color: #ffffff;
   padding: 95px 258px 103px 258px;
 }
@@ -759,7 +761,7 @@ body {
 
 .upper-container {
   color: #ffffff;
-  background-color: #000000;
+  background-color: #82b2d3;
   background-image: url("../images/selection-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -804,7 +806,7 @@ body {
 }
 
 .breadcrumbs-icon:hover {
-  background-color: rgb(21, 45, 86, 0.5);
+  background-color: rgba(21, 45, 86, 0.5);
 }
 
 .breadcrumbs-item-arrow:not(:last-child) {
@@ -939,7 +941,7 @@ body {
 }
 
 .infrastruct-input:focus-visible + .infrastruct-item-mark {
-  border: 3px solid rgba(131, 179, 211, 1);
+  border: 3px solid #83b3d3;
   left: -3px;
   top: -3px;
 }
@@ -971,7 +973,7 @@ body {
 }
 
 .house-input:focus-visible + .house-item-mark {
-  border: 3px solid rgba(131, 179, 211, 1);
+  border: 3px solid #83b3d3;
   left: -3px;
   top: -3px;
 }
@@ -1055,12 +1057,12 @@ body {
 }
 
 .range-toggle:focus-visible {
-  box-shadow: 0 0 0 3px #83B3D3;
+  box-shadow: 0 0 0 3px #83b3d3;
   outline: 0;
 }
 
 .range-toggle:active {
-  box-shadow: 0 0 0 2px #83B3D3;
+  box-shadow: 0 0 0 2px #83b3d3;
 }
 
 .toggle-min {
@@ -1130,7 +1132,7 @@ body {
   border: 2px solid #e5e5e5;
   outline: none;
   border-radius: 4px;
-  color: #333;
+  color: #333333;
   font: inherit;
   font-size: 18px;
   line-height: 21px;
@@ -1138,6 +1140,7 @@ body {
   padding: 12px 34px 12px 20px;
   width: 292px;
   background-image: url("../images/arrow-down.svg");
+  background-color: #ffffff;
   background-repeat: no-repeat;
   background-position: right 17px center;
   background-size: 12px 7px;
@@ -1214,6 +1217,7 @@ body {
 
 .gallery {
   display: grid;
+  align-items: start;
   grid-template-columns: repeat(3, 340px);
   gap: 18px 20px;
   list-style: none;
@@ -1225,6 +1229,7 @@ body {
 
  .gallery-item {
   display: grid;
+  align-items: start;
   grid-template-columns: repeat(2, 140px);
   gap: 16px 20px;
   padding: 20px;
@@ -1425,7 +1430,7 @@ body {
   height: 52px;
   width: 52px;
   background-color: #f2f2f2;
-  background-image: url(../images/icons/cross-icon.svg);
+  background-image: url("../images/icons/cross-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
   border: none;
@@ -1464,7 +1469,7 @@ body {
   left: 138px;
   padding-left: 20px;
   padding-right: 20px;
-  color: rgba(255, 87, 87, 1);
+  color: #ff5757;
   font-size: 16px;
   font-weight: 400;
   line-height: 21px;
@@ -1480,7 +1485,7 @@ body {
   left: 138px;
   padding-left: 20px;
   padding-right: 20px;
-  color: rgba(51, 51, 51, 1);
+  color: #333333;
   font-size: 16px;
   font-weight: 400;
   line-height: 21px;
@@ -1530,7 +1535,7 @@ body {
 
 .date-input:active {
   padding: 10px 40px 10px 18px;
-  border: 2px solid #000;
+  border: 2px solid #000000;
   background-position: right 20px center;
 }
 
@@ -1550,7 +1555,7 @@ body {
 
 .count-reduce:active,
 .count-increase:active {
-  border: 2px solid #000;
+  border: 2px solid #000000;
   background-position: right 18px center;
 }
 
@@ -1658,6 +1663,7 @@ body {
           appearance: none;
   height: 48px;
   width: 31px;
+  font-family: inherit;
   font-size: 18px;
   font-weight: 700;
   line-height: 20;
