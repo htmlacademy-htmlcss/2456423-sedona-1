@@ -192,7 +192,7 @@ body {
   text-transform: uppercase;
   margin: 0;
   padding: 0;
-  padding-bottom: 31px;
+  padding-bottom: 30px;
 }
 
 /*field*/
@@ -237,8 +237,8 @@ body {
 /*header-page*/
 
 .page-header {
-  align-items: flex-start;
   display: flex;
+  align-items: flex-start;
   font-weight: 700;
   padding: 0 70px 0 70px;
 }
@@ -255,17 +255,17 @@ body {
 }
 
 .navigation{
+  display: flex;
   align-self: flex-end;
   align-items: center;
   flex-grow: 1;
-  display: flex;
   justify-content: space-between;
   margin-bottom: 6px;
 }
 
 .navigation-list {
-  align-items: center;
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   list-style: none;
   margin: 0;
@@ -279,13 +279,13 @@ body {
 }
 
 .navigation-item-current::before {
+  position: absolute;
+  left: 16px;
+  right: 16px;
+  bottom: 0;
   background-color: #756257;
   content: "";
   height: 2px;
-  left: 16px;
-  right: 16px;
-  position: absolute;
-  bottom: 0;
 }
 
 .navigation-link {
@@ -312,8 +312,8 @@ body {
 }
 
 .navigation-user {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: flex-end;
   max-width: 350px;
 }
@@ -346,13 +346,13 @@ body {
 }
 
 .navigation-like {
+  position: relative;
   background-image: url("../images/icons/like.svg");
   background-size: 18px 17px;
   background-color: #ffffff;
   background-position: center;
   background-repeat: no-repeat;
   border: none;
-  position: relative;
 }
 
 .navigation-like:hover {
@@ -368,13 +368,13 @@ body {
 }
 
 .navigation-like::before {
-  content: "12";
-  background-color: #7db54f;
-  border-radius: 50%;
   position: absolute;
   left: auto;
   right: 4px;
   top: 11px;
+  content: "12";
+  background-color: #7db54f;
+  border-radius: 50%;
   font-size: 10px;
   line-height: 10px;
   color: #ffffff;
@@ -401,6 +401,7 @@ body {
 /*main-page*/
 
 .hero {
+  position: relative;
   background-color: #82b3d3;
   background-image: url("../images/hero-border.svg"), url("../images/hero-bg.jpg");
   background-repeat: no-repeat;
@@ -410,7 +411,6 @@ body {
   text-align: center;
   padding-top: 51px;
   padding-bottom: 82px;
-  position: relative;
   margin-top: -6px;
 }
 
@@ -443,7 +443,6 @@ body {
 
 .advantages-list {
   display: grid;
-  align-items: baseline;
   grid-template-columns: repeat(3, 400px);
   list-style: none;
   margin: 0;
@@ -459,16 +458,14 @@ body {
 .list-card {
   min-height: 385px;
   width: 400px;
-  display: flex;
 }
 
 .list-card-inner {
-  margin: auto;
   width: 232px;
 }
 
 .advices .list-card-inner {
-  padding-top: 101px;
+  padding-top: 104px;
 }
 
 .advantages-img {
@@ -483,8 +480,8 @@ body {
 }
 
 .advantage-blue {
-  align-items: center;
   display: flex;
+  align-items: center;
   flex-direction: column;
   justify-content: flex-start;
   min-height: 205px;
@@ -500,13 +497,13 @@ body {
 
 .advantage-grey {
   background-color: rgba(131, 179, 211, 0.20);
-  padding: 76px 83px 77px;
+  padding: 114px 83px 77px;
   box-sizing: border-box;
 }
 
 .advantage-white {
   background-color: rgba(131, 179, 211, 0.12);
-  padding: 76px 85px 77px;
+  padding: 114px 85px 77px;
   box-sizing: border-box;
 }
 
@@ -515,13 +512,13 @@ body {
 }
 
 .advantages-title::after {
-  content: "";
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.30);
-  height: 2px;
   bottom: 0;
   left: 85px;
-  right: 85px
+  right: 85px;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.30);
+  height: 2px;
 }
 
 .advantage-blue .advantages-title::after {
@@ -548,7 +545,6 @@ body {
 .advices-list {
   display: flex;
   flex-wrap: wrap;
-  align-items: baseline;
   justify-content: flex-start;
   list-style: none;
   margin: 0;
@@ -603,11 +599,11 @@ body {
 }
 
 .search-link {
+  display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
   color: #ffffff;
   background-color: #756157;
-  display: inline-block;
   font-size: 20px;
   line-height: 36px;
   padding: 8px 50px 8px 50px;
@@ -621,7 +617,7 @@ body {
   background-image: url("../images/subscription-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #82b2d3;
+  background-color: #7db54f;
   color: #ffffff;
   padding: 95px 258px 103px 258px;
 }
@@ -661,8 +657,8 @@ body {
 /*footer-page*/
 
 .communication {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   padding: 46px 70px 30px 70px;
 }
@@ -678,8 +674,8 @@ body {
 }
 
 .social-link {
-  position: relative;
   display: block;
+  position: relative;
   height: 40px;
   width: 47px;
 }
@@ -761,7 +757,7 @@ body {
 
 .upper-container {
   color: #ffffff;
-  background-color: #82b2d3;
+  background-color: #7db54f;
   background-image: url("../images/selection-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -873,8 +869,8 @@ body {
 }
 
 .selection-buttons {
-  align-items: center;
   display: flex;
+  align-items: center;
   flex-direction: column;
   justify-content: space-evenly;
   padding-top: 56px;
@@ -903,11 +899,11 @@ body {
   margin-bottom: 0;
 }
 
-.infrastruct-label{
+.infrastruct-label {
+  display: flex;
   position: relative;
   cursor: pointer;
   padding-left: 36px;
-  display: flex;
 }
 
 .infrastruct-span {
@@ -915,13 +911,13 @@ body {
 }
 
 .infrastruct-item-mark {
+  position: absolute;
+  left: 0;
+  top: 2px;
   height: 20px;
   width: 20px;
   background-color: #ffffff;
   border-radius: 3px;
-  position: absolute;
-  left: 0;
-  top: 2px;
 }
 
 .infrastruct-input[type="checkbox"]:checked + .infrastruct-item-mark {
@@ -953,13 +949,13 @@ body {
 }
 
 .house-item-mark {
+  position: absolute;
+  left: 0;
+  top: 2px;
   height: 20px;
   width: 20px;
   background-color: #ffffff;
   border-radius: 50%;
-  position: absolute;
-  left: 0;
-  top: 2px;
 }
 
 .house-input[type="radio"]:checked + .house-item-mark {
@@ -1112,16 +1108,16 @@ body {
 }
 
 .appearence-container {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   margin-bottom: 40px;
   margin-top: 50px;
 }
 
 .offers-container {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: flex-end;
   width: 570px;
 }
@@ -1217,7 +1213,6 @@ body {
 
 .gallery {
   display: grid;
-  align-items: start;
   grid-template-columns: repeat(3, 340px);
   gap: 18px 20px;
   list-style: none;
@@ -1229,8 +1224,9 @@ body {
 
  .gallery-item {
   display: grid;
-  align-items: start;
   grid-template-columns: repeat(2, 140px);
+  align-items: start;
+  align-content: start;
   gap: 16px 20px;
   padding: 20px;
   justify-items: start;
@@ -1385,13 +1381,13 @@ body {
   display: none;
   height: 100%;
   width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
   background-color: rgba(242, 242, 242, 0.8);
-  position: fixed;
-  left: 0;
-  top: 0;
   z-index: 2;
 }
 
@@ -1454,9 +1450,9 @@ body {
 
 .popover-label {
   display: flex;
+  position: relative;
   justify-content: space-between;
   margin-bottom: 48px;
-  position: relative;
 }
 
 .popover-label-error:after {
@@ -1476,13 +1472,13 @@ body {
 }
 
 .popover-label-success:after {
-  content: "На эти даты есть свободные номера. Пока есть.";
   position: absolute;
+  bottom: -27px;
+  left: 138px;
+  content: "На эти даты есть свободные номера. Пока есть.";
   width: 440px;
   height: 24px;
   box-sizing: border-box;
-  bottom: -27px;
-  left: 138px;
   padding-left: 20px;
   padding-right: 20px;
   color: #333333;
@@ -1716,6 +1712,8 @@ body {
 .tooltip-text {
   display: none;
   position: absolute;
+  top: 41px;
+  left: -115px;
   width: 256px;
   min-height: 143px;
   background-color: #333333;
@@ -1724,8 +1722,6 @@ body {
   line-height: 20px;
   color: #ffffff;
   box-sizing: border-box;
-  top: 41px;
-  left: -115px;
   margin: 0;
   border-radius: 10px;
   z-index: 1;
@@ -1733,13 +1729,13 @@ body {
 
 .tooltip-text::before {
   position: absolute;
+  top: -9px;
+  left: 50%;
+  transform: translateX(-50%);
   content: "";
   height: 9px;
   width: 19px;
   background-image: url("../images/triangle-popover.svg");
-  top: -9px;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 .popover-button:hover ~ .tooltip-text,
