@@ -468,9 +468,16 @@ body {
   padding-top: 104px;
 }
 
-.advantages-img {
-  align-self: center;
+.advantages-img-container {
+  min-height: 385px;
   width: 800px;
+}
+
+.advantages-img {
+  display: block;
+  height: 100%;
+  max-width: 100%;
+  object-fit: cover;
 }
 
 .advantages-inner {
